@@ -3,7 +3,7 @@ title: 工作系统
 description: 解决工作系统问题
 ---
 
-### notion
+notion
 
 ```mermaid
 flowchart TB
@@ -19,7 +19,6 @@ flowchart TB
 
     W -.->|跳转| N
     W -.->|跳转| D
-
 ```
 
 
