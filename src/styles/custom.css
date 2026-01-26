@@ -2,12 +2,15 @@
  * 自定义样式 - 统一左侧目录树、Markdown正文、右侧目录的字体大小
  */
 
-/* 统一字体大小为 13px */
+/* 统一字体大小 - 正文和右侧目录 13px，文件树 12px */
 .sl-markdown-content,
-.sidebar-pane,
-.sidebar-pane .top-level > li > .large,
 .right-sidebar {
   font-size: 13px;
+}
+
+.sidebar-pane,
+.sidebar-pane .top-level > li > .large {
+  font-size: 12px;
 }
 
 .sl-markdown-content h1:not(:where(.not-content *)) {
