@@ -1,64 +1,39 @@
 /**
- * 自定义样式 - 缩小字体和间距，让布局更紧凑
+ * 自定义样式 - 缩小字体大小（与 GitHub 小号字体一致）
  */
 
 :root,
 ::backdrop {
-  /* 字体大小缩小一级 */
-  --sl-text-2xs: 0.6875rem; /* 11px */
-  --sl-text-xs: 0.75rem;    /* 12px */
-  --sl-text-sm: 0.8125rem;  /* 13px */
-  --sl-text-base: 0.875rem; /* 14px */
-  --sl-text-lg: 1rem;       /* 16px */
-  --sl-text-xl: 1.125rem;   /* 18px */
-  --sl-text-2xl: 1.25rem;   /* 20px */
-  --sl-text-3xl: 1.5rem;    /* 24px */
-  --sl-text-4xl: 1.8125rem; /* 29px */
-  --sl-text-5xl: 2.1875rem; /* 35px */
-  --sl-text-6xl: 3rem;      /* 48px */
+  /* 字体大小 - 与 GitHub 小号字体一致 */
+  --sl-text-2xs: 0.625rem;  /* 10px */
+  --sl-text-xs: 0.6875rem;  /* 11px */
+  --sl-text-sm: 0.75rem;    /* 12px */
+  --sl-text-base: 0.8125rem;/* 13px - GitHub 默认正文大小 */
+  --sl-text-lg: 0.875rem;   /* 14px */
+  --sl-text-xl: 1rem;       /* 16px */
+  --sl-text-2xl: 1.125rem;  /* 18px */
+  --sl-text-3xl: 1.25rem;   /* 20px */
+  --sl-text-4xl: 1.5rem;    /* 24px */
+  --sl-text-5xl: 1.75rem;   /* 28px */
+  --sl-text-6xl: 2.25rem;   /* 36px */
 
   --sl-text-body: var(--sl-text-base);
   --sl-text-body-sm: var(--sl-text-xs);
   --sl-text-code: var(--sl-text-sm);
   --sl-text-code-sm: var(--sl-text-xs);
-  --sl-text-h1: var(--sl-text-4xl);
-  --sl-text-h2: var(--sl-text-3xl);
-  --sl-text-h3: var(--sl-text-2xl);
-  --sl-text-h4: var(--sl-text-xl);
-  --sl-text-h5: var(--sl-text-lg);
-
-  /* 行高缩小 */
-  --sl-line-height: 1.5;
-  --sl-line-height-headings: 1.15;
-
-  /* 间距缩小 */
-  --sl-nav-height: 3rem;
-  --sl-nav-pad-x: 0.75rem;
-  --sl-nav-pad-y: 0.5rem;
-  --sl-mobile-toc-height: 2.5rem;
-  --sl-sidebar-width: 16rem;
-  --sl-sidebar-pad-x: 0.75rem;
-  --sl-content-pad-x: 0.75rem;
-  --sl-content-gap-y: 0.75rem;
-  --sl-main-pad: 0 0 2vh 0;
-  --sl-menu-button-size: 1.75rem;
-  --sl-nav-gap: var(--sl-content-pad-x);
+  --sl-text-h1: var(--sl-text-4xl);   /* 24px */
+  --sl-text-h2: var(--sl-text-3xl);   /* 20px */
+  --sl-text-h3: var(--sl-text-2xl);   /* 18px */
+  --sl-text-h4: var(--sl-text-xl);    /* 16px */
+  --sl-text-h5: var(--sl-text-lg);    /* 14px */
 }
 
 @media (min-width: 50em) {
   :root {
-    --sl-nav-height: 3.25rem;
-    --sl-nav-pad-x: 1rem;
-    --sl-text-h1: var(--sl-text-5xl);
-    --sl-text-h2: var(--sl-text-4xl);
-    --sl-text-h3: var(--sl-text-3xl);
-    --sl-text-h4: var(--sl-text-2xl);
-  }
-}
-
-@media (min-width: 72rem) {
-  :root {
-    --sl-content-pad-x: 1rem;
-    --sl-mobile-toc-height: 0rem;
+    /* 大屏幕下标题稍微大一点，但仍保持紧凑 */
+    --sl-text-h1: var(--sl-text-5xl); /* 28px */
+    --sl-text-h2: var(--sl-text-4xl); /* 24px */
+    --sl-text-h3: var(--sl-text-3xl); /* 20px */
+    --sl-text-h4: var(--sl-text-2xl); /* 18px */
   }
 }
