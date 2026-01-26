@@ -8,42 +8,38 @@ body,
   font-size: var(--sl-text-base);
 }
 
-@layer rapide {
-  :root,
-  ::backdrop {
-    /* 字体大小 - 与 GitHub 小号字体一致 */
-    --sl-text-2xs: 0.625rem;  /* 10px */
-    --sl-text-xs: 0.6875rem;  /* 11px */
-    --sl-text-sm: 0.75rem;    /* 12px */
-    --sl-text-base: 0.8125rem;/* 13px - GitHub 默认正文大小 */
-    --sl-text-lg: 0.875rem;   /* 14px */
-    --sl-text-xl: 1rem;       /* 16px */
-    --sl-text-2xl: 1.125rem;  /* 18px */
-    --sl-text-3xl: 1.25rem;   /* 20px */
-    --sl-text-4xl: 1.5rem;    /* 24px */
-    --sl-text-5xl: 1.75rem;   /* 28px */
-    --sl-text-6xl: 2.25rem;   /* 36px */
+:root,
+::backdrop {
+  /* 字体大小 - 与 GitHub 小号字体一致 */
+  --sl-text-2xs: 0.625rem;  /* 10px */
+  --sl-text-xs: 0.6875rem;  /* 11px */
+  --sl-text-sm: 0.75rem;    /* 12px */
+  --sl-text-base: 0.8125rem;/* 13px - GitHub 默认正文大小 */
+  --sl-text-lg: 0.875rem;   /* 14px */
+  --sl-text-xl: 1rem;       /* 16px */
+  --sl-text-2xl: 1.125rem;  /* 18px */
+  --sl-text-3xl: 1.25rem;   /* 20px */
+  --sl-text-4xl: 1.5rem;    /* 24px */
+  --sl-text-5xl: 1.75rem;   /* 28px */
+  --sl-text-6xl: 2.25rem;   /* 36px */
 
-    --sl-text-body: var(--sl-text-base);
-    --sl-text-body-sm: var(--sl-text-xs);
-    --sl-text-code: var(--sl-text-sm);
-    --sl-text-code-sm: var(--sl-text-xs);
+  --sl-text-body: var(--sl-text-base);
+  --sl-text-body-sm: var(--sl-text-xs);
+  --sl-text-code: var(--sl-text-sm);
+  --sl-text-code-sm: var(--sl-text-xs);
+  --sl-text-h1: var(--sl-text-4xl);   /* 24px */
+  --sl-text-h2: var(--sl-text-3xl);   /* 20px */
+  --sl-text-h3: var(--sl-text-2xl);   /* 18px */
+  --sl-text-h4: var(--sl-text-xl);    /* 16px */
+  --sl-text-h5: var(--sl-text-lg);    /* 14px */
+}
 
-    /* 标题大小 - 覆盖主题默认值 */
-    --sl-text-h1: var(--sl-text-4xl);   /* 24px */
-    --sl-text-h2: var(--sl-text-3xl);   /* 20px */
-    --sl-text-h3: var(--sl-text-2xl);   /* 18px */
-    --sl-text-h4: var(--sl-text-xl);    /* 16px */
-    --sl-text-h5: var(--sl-text-lg);    /* 14px */
-  }
-
-  @media (min-width: 50em) {
-    :root {
-      /* 大屏幕下标题稍微大一点，但仍保持紧凑 */
-      --sl-text-h1: var(--sl-text-5xl); /* 28px */
-      --sl-text-h2: var(--sl-text-4xl); /* 24px */
-      --sl-text-h3: var(--sl-text-3xl); /* 20px */
-      --sl-text-h4: var(--sl-text-2xl); /* 18px */
-    }
+@media (min-width: 50em) {
+  :root {
+    /* 大屏幕下标题稍微大一点，但仍保持紧凑 */
+    --sl-text-h1: var(--sl-text-5xl); /* 28px */
+    --sl-text-h2: var(--sl-text-4xl); /* 24px */
+    --sl-text-h3: var(--sl-text-3xl); /* 20px */
+    --sl-text-h4: var(--sl-text-2xl); /* 18px */
   }
 }
