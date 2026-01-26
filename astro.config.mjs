@@ -7,7 +7,7 @@ export default defineConfig({
 	integrations: [
 		starlight({
 			plugins: [starlightThemeRapide()],
-			title: 'My Docs',
+			title: '七十七.七',
 			customCss: ['./src/styles/custom.css'],
 		}),
 	],
