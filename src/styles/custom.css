@@ -9,8 +9,8 @@
 }
 
 .sidebar-pane,
-.sidebar-pane .top-level > li > .large {
-  font-size: 12px;
+.sidebar-pane * {
+  font-size: 12px !important;
 }
 
 .sl-markdown-content h1:not(:where(.not-content *)) {
