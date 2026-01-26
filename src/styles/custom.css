@@ -5,6 +5,7 @@
 /* 统一字体大小为 13px */
 .sl-markdown-content,
 .sidebar-pane,
+.sidebar-pane .top-level > li > .large,
 .right-sidebar {
   font-size: 13px;
 }
