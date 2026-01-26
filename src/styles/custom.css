@@ -2,6 +2,12 @@
  * 自定义样式 - 缩小字体大小（与 GitHub 小号字体一致）
  */
 
+/* 正文段落字体大小 */
+body,
+.sl-markdown-content {
+  font-size: var(--sl-text-base);
+}
+
 :root,
 ::backdrop {
   /* 字体大小 - 与 GitHub 小号字体一致 */
