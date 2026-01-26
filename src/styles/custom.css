@@ -1,9 +1,11 @@
 /**
- * 自定义样式 - 只调整 Markdown 正文内容的字体大小
+ * 自定义样式 - 统一左侧目录树、Markdown正文、右侧目录的字体大小
  */
 
-/* Markdown 正文内容字体大小 - GitHub 小号样式 */
-.sl-markdown-content {
+/* 统一字体大小为 13px */
+.sl-markdown-content,
+.sidebar-pane,
+.right-sidebar {
   font-size: 13px;
 }
 
