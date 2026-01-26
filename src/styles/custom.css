@@ -1,34 +1,32 @@
 /**
- * 自定义样式 - 缩小字体大小（与 GitHub 小号字体一致）
+ * 自定义样式 - 只调整 Markdown 正文内容的字体大小
  */
 
-/* 正文段落字体大小 */
-body,
+/* Markdown 正文内容字体大小 - GitHub 小号样式 */
 .sl-markdown-content {
-  font-size: var(--sl-text-base);
+  font-size: 13px;
 }
 
-/* Markdown 内容中的标题大小 - GitHub 小号样式 */
 .sl-markdown-content h1:not(:where(.not-content *)) {
-  font-size: 1.5rem;    /* 24px */
+  font-size: 24px;
 }
 
 .sl-markdown-content h2:not(:where(.not-content *)) {
-  font-size: 1.25rem;   /* 20px */
+  font-size: 20px;
 }
 
 .sl-markdown-content h3:not(:where(.not-content *)) {
-  font-size: 1.125rem;  /* 18px */
+  font-size: 18px;
 }
 
 .sl-markdown-content h4:not(:where(.not-content *)) {
-  font-size: 1rem;      /* 16px */
+  font-size: 16px;
 }
 
 .sl-markdown-content h5:not(:where(.not-content *)) {
-  font-size: 0.875rem;  /* 14px */
+  font-size: 14px;
 }
 
 .sl-markdown-content h6:not(:where(.not-content *)) {
-  font-size: 0.8125rem; /* 13px */
+  font-size: 13px;
 }
