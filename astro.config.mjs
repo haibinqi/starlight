@@ -8,7 +8,7 @@ export default defineConfig({
 		starlight({
 			plugins: [starlightThemeRapide()],
 			title: 'My Docs',
-
+			customCss: ['./src/styles/custom.css'],
 		}),
 	],
 });
