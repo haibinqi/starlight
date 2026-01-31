@@ -7,8 +7,11 @@ export default defineConfig({
 	integrations: [
 		starlight({
 			plugins: [starlightThemeRapide()],
-			title: '七十七.七',
+			title: 'haibin',
 			customCss: ['./src/styles/custom.css'],
+			components: {
+				Header: './src/components/Header.astro',
+			},
 		}),
 	],
 });

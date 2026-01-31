@@ -36,3 +36,33 @@
 .sl-markdown-content h6:not(:where(.not-content *)) {
   font-size: 13px;
 }
+
+/* 缩小顶部导航栏高度 */
+:root {
+  --sl-nav-height: 2.5rem !important;
+  --sl-nav-pad-y: 0.25rem;
+}
+
+/* 缩小搜索按钮 */
+site-search button[data-open-modal] {
+  height: 1.75rem !important;
+  min-height: 1.75rem !important;
+}
+
+/* 缩小下拉菜单按钮 */
+.starlight-select > button {
+  height: 1.75rem !important;
+  min-height: 1.75rem !important;
+  padding: 0.25rem 0.5rem !important;
+}
+
+/* 缩小社交图标 */
+.social-icons a {
+  height: 1.5rem;
+}
+
+/* 调整标题区域 */
+.title-wrapper {
+  padding: 0.125rem;
+  margin: -0.125rem;
+}
