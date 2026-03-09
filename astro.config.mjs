@@ -10,7 +10,7 @@ export default defineConfig({
 	integrations: [
 		starlight({
 			plugins: [starlightThemeRapide()],
-			title: 'haibin',
+			title: 'Tenwin',
 			customCss: ['./src/styles/custom.css'],
 			components: {
 				Header: './src/components/Header.astro',
