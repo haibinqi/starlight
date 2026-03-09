@@ -7,8 +7,9 @@
  */
 export default {
   async fetch(request, env) {
-    const expectedUser = env.AUTH_USER ?? 'admin';
-    const expectedPass = env.AUTH_PASS ?? 'changeme';
+    // ⚠️ 临时硬编码用于测试，验证通过后改回环境变量
+    const expectedUser = 'AUTH_USER';
+    const expectedPass = '!TeNwiN26.ph';
 
     const authHeader = request.headers.get('Authorization') ?? '';
     const unauthorized = () =>
