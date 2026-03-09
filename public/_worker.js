@@ -7,9 +7,12 @@
  */
 export default {
   async fetch(request, env) {
-    // ⚠️ 临时硬编码用于测试，验证通过后改回环境变量
-    const expectedUser = 'AUTH_USER';
-    const expectedPass = '!TeNwiN26.ph';
+    const expectedUser = env.AUTH_USER;
+    const expectedPass = env.AUTH_PASS;
+
+    if (!expectedUser || !expectedPass) {
+      return new Response('服务器未配置认证信息，请联系管理员', { status: 503 });
+    }
 
     const authHeader = request.headers.get('Authorization') ?? '';
     const unauthorized = () =>
