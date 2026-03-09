@@ -11,7 +11,9 @@ export default {
     const expectedPass = env.AUTH_PASS;
 
     if (!expectedUser || !expectedPass) {
-      return new Response('服务器未配置认证信息，请联系管理员', { status: 503 });
+      // 调试：显示 env 里有哪些 key
+      const keys = Object.keys(env).join(', ') || '（空）';
+      return new Response(`AUTH_USER=${env.AUTH_USER}, AUTH_PASS=${env.AUTH_PASS ? '有值' : '无值'}, env keys: ${keys}`, { status: 503 });
     }
 
     const authHeader = request.headers.get('Authorization') ?? '';
