@@ -11,10 +11,14 @@
             "id": "4d62f90da98acf70",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "03_金蝶系统文档/金蝶操作手册.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "新标签页"
+              "title": "金蝶操作手册"
             }
           }
         ],
@@ -180,10 +184,17 @@
       "bases:新建数据库": false
     }
   },
-  "active": "85fc448d4c16ed10",
+  "active": "4d62f90da98acf70",
   "lastOpenFiles": [
-    "test.md",
+    "03_金蝶系统文档/assets/Pasted image 20260312131407.png",
+    "03_金蝶系统文档/assets/Pasted image 20260312131357.png",
+    "03_金蝶系统文档/assets/Pasted image 20260312130558.png",
+    "03_金蝶系统文档/assets/Pasted image 20260127093216.png",
+    "03_金蝶系统文档/assets/image260203.png",
+    "03_金蝶系统文档/金蝶操作手册.md",
+    "04_知识库/suggests.md",
     "05_提示词工程/nanobanana2.md",
+    "test.md",
     "03_金蝶系统文档/需求管理.md.md",
     "金蝶系统文档/金蝶操作手册.md",
     "05_提示词工程",
@@ -195,10 +206,6 @@
     "黑湖系统文档/腾为黑湖操作文档.md",
     "黑湖系统文档/assets/Pasted image 20260302094558.png",
     "黑湖系统文档/assets/Pasted image 20260302094349.png",
-    "黑湖系统文档/assets/Pasted image 20260302093921.png",
-    "黑湖系统文档/assets/2026-02-05_13-28-16.png",
-    "黑湖系统文档/assets/5761364497260e13f4799cce600594d6.jpg",
-    "黑湖系统文档/assets/Pasted image 20260129094754.png",
     "知识库/生产领料和退料规范.md",
     "知识库/物料编码规则.md",
     "会议纪要/20260213.md",
