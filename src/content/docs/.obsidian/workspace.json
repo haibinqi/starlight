@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "03_金蝶系统文档/二次开发和系统配置/开发和配置.md",
+                "file": "03_金蝶系统文档/开发和配置.md",
                 "mode": "source",
                 "source": false
               },
@@ -79,8 +79,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "a434152b0bc48fdf",
@@ -185,10 +184,10 @@
       "bases:新建数据库": false
     }
   },
-  "active": "4d62f90da98acf70",
+  "active": "85fc448d4c16ed10",
   "lastOpenFiles": [
     "03_金蝶系统文档/金蝶操作手册.md",
-    "03_金蝶系统文档/二次开发和系统配置/开发和配置.md",
+    "03_金蝶系统文档/开发和配置.md",
     "03_金蝶系统文档/二次开发和系统配置",
     "03_金蝶系统文档/assets/Pasted image 20260312131407.png",
     "03_金蝶系统文档/assets/Pasted image 20260312131357.png",
