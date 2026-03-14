@@ -1,6 +1,8 @@
 ---
-title:库存管理-物控
-description:仓管
+
+title: 库存管理-物控
+description: 持续维护
+
 ---
 
 1. 物料库存信息关键属性维护
