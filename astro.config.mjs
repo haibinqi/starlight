@@ -18,6 +18,7 @@ export default defineConfig({
 			logo: {
 				src: './src/assets/logo.png',
 				alt: 'Tenwin',
+				replacesTitle: true,
 			},
 			customCss: ['./src/styles/custom.css'],
 			components: {
