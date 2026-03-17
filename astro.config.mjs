@@ -15,6 +15,10 @@ export default defineConfig({
 		starlight({
 			plugins: [starlightThemeRapide()],
 			title: 'Tenwin',
+			logo: {
+				src: './src/assets/logo.png',
+				alt: 'Tenwin',
+			},
 			customCss: ['./src/styles/custom.css'],
 			components: {
 				Header: './src/components/Header.astro',
