@@ -1,0 +1,22 @@
+---
+import MobileMenuFooter from 'virtual:starlight/components/MobileMenuFooter';
+import SidebarPersister from '@astrojs/starlight/components/SidebarPersister.astro';
+import SidebarSublist from '@astrojs/starlight/components/SidebarSublist.astro';
+
+const { sidebar } = Astro.locals.starlightRoute;
+
+const hasCurrent = (entry) =>
+	entry.type === 'link' ? entry.isCurrent : entry.entries.some(hasCurrent);
+
+const filteredSidebar = sidebar.filter(hasCurrent);
+const isHome = Astro.url.pathname === '/';
+const effectiveSidebar = !isHome && filteredSidebar.length ? filteredSidebar : sidebar;
+---
+
+<SidebarPersister>
+	<SidebarSublist sublist={effectiveSidebar} />
+</SidebarPersister>
+
+<div class="md:sl-hidden">
+	<MobileMenuFooter />
+</div>

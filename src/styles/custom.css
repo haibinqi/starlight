@@ -46,7 +46,7 @@
 :root {
   --sl-nav-height: 2.5rem !important;
   --sl-nav-pad-y: 0.25rem;
-  --sl-content-width: 70rem;
+  --sl-content-width: 60rem;
 }
 
 /* 缩小搜索按钮 */
