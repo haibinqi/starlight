@@ -1,8 +1,0 @@
-{
-  "showInlineTitle": false,
-  "promptDelete": false,
-  "attachmentFolderPath": "./assets",
-  "newLinkFormat": "relative",
-  "newFileLocation": "current",
-  "useMarkdownLinks": true
-}
