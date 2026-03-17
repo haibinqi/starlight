@@ -1,8 +1,7 @@
-/**
- * 自定义样式 - 统一左侧目录树、Markdown正文、右侧目录的字体大小
- */
+/* Custom styles: unify typography and tighten layout for docs. */
 
-/* 统一字体大小 - 正文和右侧目录 13px，文件树 12px */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
 .sl-markdown-content,
 .right-sidebar {
   font-size: 11px;
@@ -42,45 +41,51 @@
   font-size: 13px;
 }
 
-/* 缩小顶部导航栏高度；增加文档内容区宽度 30%（默认 45rem → 58.5rem） */
 :root {
   --sl-nav-height: 2.5rem !important;
   --sl-nav-pad-y: 0.25rem;
   --sl-content-width: 60rem;
+  --sl-font: 'Inter';
+  --sl-line-height: 1.7;
+  --sl-main-pad: 0 0 0.5vh 0 !important;
 }
 
-/* 缩小搜索按钮 */
 site-search button[data-open-modal] {
   height: 1.75rem !important;
   min-height: 1.75rem !important;
 }
 
-/* 缩小下拉菜单按钮 */
 .starlight-select > button {
   height: 1.75rem !important;
   min-height: 1.75rem !important;
   padding: 0.25rem 0.5rem !important;
 }
 
-/* 缩小社交图标 */
 .social-icons a {
   height: 1.5rem;
 }
 
-/* 调整标题区域 */
 .title-wrapper {
   padding: 0.125rem;
   margin: -0.125rem;
 }
 
-/* ===== 首页字体统一 ===== */
-/* Splash 模板页面字体大小与其他页面保持一致 */
+.primary-nav-link {
+  transition: color 200ms ease, background-color 200ms ease;
+}
+
+.primary-nav-link.is-active {
+  color: var(--sl-color-text-invert);
+  background: var(--sl-color-text-accent);
+  border-radius: 0.375rem;
+}
+
+/* Home page typography */
 .sl-markdown,
 .sl-markdown * {
   font-size: 11px !important;
 }
 
-/* Hero 区域标题字体大小 */
 .hero h1 {
   font-size: 24px !important;
 }
@@ -89,35 +94,29 @@ site-search button[data-open-modal] {
   font-size: 20px !important;
 }
 
-/* Hero tagline 字体 */
 .hero .tagline {
   font-size: 11px !important;
 }
 
-/* Hero 按钮字体 */
 .hero .actions button,
 .hero .actions a {
   font-size: 11px !important;
 }
 
-/* Card 组件字体 */
 .card-grid,
 .card-grid * {
   font-size: 11px !important;
 }
 
-/* Card 组件内边距调整 */
 .card {
   padding: 0.75rem !important;
 }
 
-/* Hero 按钮内边距调整 */
 .hero .actions button,
 .hero .actions a {
   padding: 0.5rem 1rem !important;
 }
 
-/* Hero 内容对齐 */
 .hero {
   align-items: flex-start !important;
 }
@@ -125,39 +124,56 @@ site-search button[data-open-modal] {
 .hero .stack {
   align-items: flex-start !important;
   text-align: left !important;
+  padding-top: 0.5rem;
 }
 
-/* ===== 首页空白优化 ===== */
-/* 首页 main-frame 顶部与左侧目录内容对齐 */
 .main-frame {
   padding-top: calc(var(--sl-nav-height) + 1rem) !important;
 }
 
-/* Hero 区域移除内边距 */
 .hero {
   padding-top: 0 !important;
   padding-bottom: 1rem !important;
 }
 
-/* 大屏幕 Hero 调整 */
 @media (min-width: 50rem) {
   .hero {
     padding-block: 0 1.5rem !important;
   }
 }
 
-/* Hero 内容顶部间距 */
-.hero .stack {
-  padding-top: 0.5rem;
-}
-
-/* 减少主内容区底部边距 */
-:root {
-  --sl-main-pad: 0 0 0.5vh 0 !important;
-}
-
-/* 减小 Hero 图片 */
 .hero img {
   max-height: 180px;
   width: auto;
+}
+
+/* UX enhancements */
+:where(a, button, [role='button'], input, select, textarea):focus-visible {
+  outline: 2px solid var(--sl-color-accent);
+  outline-offset: 2px;
+}
+
+.sl-markdown details {
+  border: 1px solid var(--sl-color-gray-5);
+  border-radius: 0.5rem;
+  padding: 0.5rem 0.75rem;
+}
+
+.sl-markdown details + details {
+  margin-top: 0.5rem;
+}
+
+.sl-markdown summary {
+  cursor: pointer;
+  font-weight: 600;
+  list-style: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
